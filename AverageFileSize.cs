@@ -37,7 +37,7 @@ namespace ProgrammingFoundationsAssessment
     /// </summary>
     public class File
     {
-       public int fileSize;
+        public int fileSize;
 
         public File(int fileSize)
         {
