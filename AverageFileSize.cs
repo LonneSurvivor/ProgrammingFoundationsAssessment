@@ -18,7 +18,7 @@ namespace ProgrammingFoundationsAssessment
             int fileCount = files.Count;
             int averageFileSize;
             int totalFileSize = 0;
-            
+
             // Foreach loop adding the filesize to the current total
             foreach (var file in files)
             {
@@ -37,11 +37,11 @@ namespace ProgrammingFoundationsAssessment
     /// </summary>
     public class File
     {
-       public int fileSize;
+        public int fileSize;
 
         public File(int fileSize)
         {
             this.fileSize = fileSize;
-        }   
+        }
     }
 }
