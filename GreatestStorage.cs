@@ -8,22 +8,9 @@
         public static void GetFileSize()
         {
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            List<int> files = new List<int> {12, 1223, 53, 12, 9863, 242, 5, 23, 690, 453, 19};
-            int fileSize;
-            int largestFileSize = 0;
-           
-            foreach (int file in files)
-            {
-                
-                fileSize = file;
+            IEnumerable<int> files = [12, 1223, 53, 12, 9863, 242, 5, 23, 690, 453, 19];
 
-                if (fileSize > largestFileSize)
-                {
-                    largestFileSize = fileSize;
-                }
-            }
-
-            Console.WriteLine($"The largest file is {largestFileSize}MB.");
+            Console.WriteLine($"The largest file is {files.Max()}MB");
         }
     }
 }
